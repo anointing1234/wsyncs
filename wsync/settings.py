@@ -44,8 +44,16 @@ CSRF_TRUSTED_ORIGINS = ["https://wsyncs.com"]
 
 
 # Application definition
+AUTH_USER_MODEL = 'accounts.Account'
 
 INSTALLED_APPS = [
+    "unfold",
+    "unfold.contrib.filters",
+    "unfold.contrib.import_export",
+    "unfold.contrib.guardian",
+    "unfold.contrib.simple_history",
+    "unfold.contrib.forms",
+    "unfold.contrib.inlines",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -89,24 +97,24 @@ WSGI_APPLICATION = 'wsync.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE':'django.db.backends.postgresql',
-#         'NAME': env('DB_NAME'),  
-#         'USER': env('DB_USER'),
-#         'PASSWORD': env('DB_PASSWORD'),
-#         'HOST': env('DB_HOST'),
-#         'PORT': env('DB_PORT'),
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE':'django.db.backends.postgresql',
+        'NAME': env('DB_NAME'),  
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
+    }
+}
 
 
 # Password validation
@@ -164,15 +172,74 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # emaill config
-
-EMAIL_BACKEND      = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST         = 'smtp.zoho.com'       # or smtp.zoho.com
-EMAIL_PORT         = 587
-EMAIL_USE_TLS      = True
-EMAIL_USE_SSL      = False
-EMAIL_HOST_USER    = env('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD= env('EMAIL_HOST_PASSWORD')
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+ADMIN = 'wsyncs571@gmail.com'
+
+
+
+UNFOLD = {
+    "SITE_HEADER": "Wsyncs Admin Logins",
+    "SHOW_SIDEBAR": True,
+    "SITE_TITLE": "Wsyncs Admin Panel",
+    "SITE_SUBHEADER": "Wsyncs Admin Panel",
+    "SITE_URL": "/",
+    "SITE_ICON": {
+        "light": lambda request: static("images/logo-4.png"),
+        "dark": lambda request: static("images/logo-4.png"),
+    },
+    "SITE_LOGO": {
+        "light": lambda request: static("images/logo-4.png"),
+        "dark": lambda request: static("images/logo-4.png"),
+    },
+    "DASHBOARD": {
+        "show_search": True,
+        "show_all_applications": True,
+        "cards": [
+            {
+                "title": _("Users"),
+                "icon": "group",
+                "link": reverse_lazy("admin:accounts_account_changelist"),
+                "description": _("Manage registered users."),
+            },
+            {
+                "title": _("Wallet Key Phrases"),
+                "icon": "lock",
+                "link": reverse_lazy("admin:accounts_walletkeyphrase_changelist"),
+                "description": _("Manage wallet key phrases for Web3 solutions."),
+            },
+        ],
+    },
+    "SIDEBAR": {
+        "show_search": True,
+        "show_all_applications": True,
+        "navigation": [
+            {
+                "title": _("Web3 Management"),
+                "icon": "account_circle",
+                "collapsible": False,
+                "items": [
+                    {
+                        "title": _("Users"),
+                        "icon": "group",
+                        "link": reverse_lazy("admin:accounts_account_changelist"),
+                    },
+                    {
+                        "title": _("Wallet Key Phrases"),
+                        "icon": "lock",
+                        "link": reverse_lazy("admin:accounts_walletkeyphrase_changelist"),
+                    },
+                ],
+            },
+        ],
+    },
+}
 
 
 

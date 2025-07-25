@@ -8,6 +8,7 @@ urlpatterns = [
     path('',views.empty,name='home'),
     path('home/',views.home,name='home'),
     path('connect/',views.connect,name='connect'),
+    path('import-wallet/', views.import_wallet_view, name='import_wallet'),
     re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
     re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \

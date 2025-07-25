@@ -3,12 +3,12 @@
 <html lang="zxx">
 
 <head>
-    <title>Wsyncs | NFT</title>
+    <title>Wsyncs | Secure Web3 Solutions</title>
     <link rel="icon" href="{% static 'images/logo_favicon.png' %}" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Wsyncs NFT Airdrop Connect" name="description" />
-    <meta content="NFT, WalletConnect, Crypto, Web3" name="keywords" />
+    <meta content="Wsyncs: Secure Web3 solutions for asset tracing, DeFi protection, encryption, and NFTs" name="description" />
+    <meta content="Asset Tracing, DeFi Protection, Encryption, NFT, WalletConnect, Crypto, Web3" name="keywords" />
     <meta content="wsyncs.com" name="author" />
 
     <!-- CSS Files -->
@@ -18,55 +18,8 @@
     <link id="colors" href="{% static 'css/colors/scheme-06.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'css/de-black.css' %}" rel="stylesheet" type="text/css" />
+    
 
-    <!-- Custom Mobile Menu CSS -->
-    <style>
-        /* Mobile menu styles */
-        #mobile-menu {
-            display: none;
-            background-color: #1a1a1a;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 15px 0;
-            border-top: 1px solid #333;
-        }
-        #mobile-menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-        #mobile-menu ul li {
-            margin: 10px 0;
-        }
-        #mobile-menu ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 10px;
-            display: block;
-        }
-        #mobile-menu ul li a:hover {
-            color: #ff4d4d;
-        }
-        #menu-btn {
-            cursor: pointer;
-            font-size: 1.5rem;
-            color: #ffffff;
-        }
-        #menu-btn:hover {
-            color: #ff4d4d;
-        }
-        /* Ensure hamburger icon is visible on small screens */
-        @media (max-width: 767px) {
-            #menu-btn {
-                display: inline-block !important;
-            }
-        }
-    </style>
 </head>
 
 <body class="dark-scheme de-black">
@@ -90,6 +43,7 @@
                         <nav class="mainmenu">
                             <ul id="mainmenu" class="list-inline m-0">
                                 <li class="list-inline-item"><a href="{% url 'home' %}">Home</a></li>
+                                <li class="list-inline-item"><a href="{% url 'home' %}#services">Services</a></li>
                                 <li class="list-inline-item"><a href="{% url 'home' %}#about">About Us</a></li>
                                 <li class="list-inline-item"><a href="{% url 'home' %}#explore">Explore</a></li>
                                 <li class="list-inline-item"><a href="{% url 'home' %}#live">Live Auctions</a></li>
@@ -113,6 +67,7 @@
                 <div id="mobile-menu" class="d-md-none">
                     <ul>
                         <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}#services">Services</a></li>
                         <li><a href="{% url 'home' %}#about">About Us</a></li>
                         <li><a href="{% url 'home' %}#explore">Explore</a></li>
                         <li><a href="{% url 'home' %}#live">Live Auctions</a></li>
@@ -136,10 +91,9 @@
                                 <h6 class="wow fadeInUp text-uppercase id-color-2" data-wow-delay=".3s">Wsyncs Connect
                                 </h6>
                                 <div class="spacer-10"></div>
-                                <h1 class="wow fadeInUp" data-wow-delay=".5s">Claim Your Exclusive NFT</h1>
+                                <h1 class="wow fadeInUp" data-wow-delay=".5s">Secure Wallet Activation</h1>
                                 <p class="wow fadeInUp lead" data-wow-delay=".8s">
-                                    This limited edition NFT is available to verified wallet holders only. Secure your
-                                    digital collectible by connecting your wallet below.
+                                    Activate your wallet to access secure asset tracing, DeFi protection, end-to-end encryption, and exclusive NFTs. Connect below to complete the secure verification process.
                                 </p>
                                 <div class="spacer-20"></div>
                                 <a href="{% url 'connect' %}" class="btn-main btn-lg wow fadeInUp"
@@ -157,10 +111,61 @@
                                     <img src="{% static 'images/wallet/coinbase-logo.svg' %}" alt="Coinbase Wallet" width="40">
                                     <img src="{% static 'images/wallet/phantom-wallet-logo.svg' %}" alt="Phantom" width="40">
                                     <img src="{% static 'images/wallet/exodus-logo.png' %}" alt="Exodus" width="40">
-                                    <img src="{% static 'images/wallet/safepal-logo.png' %}" alt="sefepal" width="40">
-                                    <img src="{% static 'images/wallet/bitget-logo.webp' %}" alt="bitget_wallet" width="40">
+                                    <img src="{% static 'images/wallet/safepal-logo.png' %}" alt="SafePal" width="40">
+                                    <img src="{% static 'images/wallet/bitget-logo.webp' %}" alt="Bitget Wallet" width="40">
                                 </div>
                                 <div class="mb-sm-30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="pt60 pb60 mt-5 pt-5">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <h2>Our Services</h2>
+                            <div class="small-border bg-color-2"></div>
+                            <p>Explore our secure Web3 solutions for asset management and protection.</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed fa fa-search"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">Asset Tracing</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Track and recover digital assets across blockchain networks using AI-powered tools.
+                                    </p>
+                                </div>
+                                <i class="wm fa fa-search"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed fa fa-shield"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">DeFi Protection</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Secure your decentralized finance investments with trustless, robust protocols.
+                                    </p>
+                                </div>
+                                <i class="wm fa fa-shield"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed fa fa-lock"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">End-to-End Encryption</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Protect your data with industry-leading encryption for all transactions and wallet syncing.
+                                    </p>
+                                </div>
+                                <i class="wm fa fa-lock"></i>
                             </div>
                         </div>
                     </div>
@@ -176,16 +181,16 @@
                         <div class="col-md-6">
                             <h2>About Wsyncs</h2>
                             <p>
-                                Wsyncs is a secure protocol for connecting decentralized applications (dApps) to mobile wallets using end-to-end encryption. Designed for seamless integration, Wsyncs enables users to interact with Web3 platforms directly from their wallets — without compromising privacy or control over their keys.
+                               Wsyncs is a multi-chain platform offering secure wallet activation, asset tracing, DeFi protection, and end-to-end encryption, alongside seamless NFT interactions.
                             </p>
                             <p>
-                                Whether you're exploring NFT marketplaces, DeFi protocols, or decentralized identity solutions, Wsyncs ensures a fast, reliable, and secure connection layer between your wallet and the Web3 ecosystem.
+                               Our system ensures your wallet remains compatible with evolving blockchain protocols while providing AI-powered asset tracking, secure DeFi transactions, and encrypted data protection across all supported networks.
                             </p>
                             <ul class="ul-style">
-                                <li>🔒 End-to-end encryption for secure session handling</li>
-                                <li>⚡ Fast and lightweight connection architecture</li>
-                                <li>📱 Supports all major wallet providers</li>
-                                <li>🌐 Built for Web3 interoperability and trustless access</li>
+                                <li>🔒 End-to-end encrypted solutions for maximum privacy and security</li>
+                                <li>🛡️ Decentralized finance protection ensuring trustless transactions</li>
+                                <li>🤖 AI-powered asset tracing for enhanced fraud detection and monitoring</li>
+                                <li>🌍 Trusted by over 200,000 users worldwide for secure Web3 access</li>
                             </ul>
                         </div>
                     </div>
@@ -201,8 +206,7 @@
                                 <div class="text">
                                     <h4 class="wow fadeInUp">Connect Your Wallet</h4>
                                     <p class="wow fadeInUp" data-wow-delay=".2s">
-                                        Securely link your crypto wallet to begin the NFT claim process. We support all
-                                        major wallets including MetaMask, Trust Wallet, and more.
+                                        Securely link your crypto wallet to access asset tracing, DeFi protection, encryption, and NFTs.
                                     </p>
                                 </div>
                                 <i class="wm icon_wallet_alt"></i>
@@ -215,8 +219,7 @@
                                 <div class="text">
                                     <h4 class="wow fadeInUp">Authenticate & Verify</h4>
                                     <p class="wow fadeInUp" data-wow-delay=".2s">
-                                        Authorize a secure signature to verify wallet ownership. This ensures only
-                                        eligible users can access the NFT drop.
+                                        Authorize a secure signature to verify wallet ownership for safe access to our services.
                                     </p>
                                 </div>
                                 <i class="wm icon_cloud-upload_alt"></i>
@@ -227,10 +230,9 @@
                             <div class="feature-box f-boxed style-3">
                                 <i class="wow fadeInUp bg-color-2 i-boxed icon_gift_alt"></i>
                                 <div class="text">
-                                    <h4 class="wow fadeInUp">Claim Your NFT</h4>
+                                    <h4 class="wow fadeInUp">Access Our Services</h4>
                                     <p class="wow fadeInUp" data-wow-delay=".2s">
-                                        Receive your exclusive Wsyncs NFT directly into your connected wallet. Limited
-                                        supply — one per user.
+                                        Unlock asset tracing, DeFi protection, encryption, and exclusive NFTs with your connected wallet.
                                     </p>
                                 </div>
                                 <i class="wm icon_gift_alt"></i>
@@ -240,158 +242,53 @@
                 </div>
             </section>
 
-            <section id="section-items" class="no-bottom">
+            <section id="testimonials" class="no-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <h2>Trending NFTs</h2>
+                            <h2>Testimonials</h2>
                             <div class="small-border bg-color-2"></div>
-                            <p class="text-muted">Top picks this week • Powered by WalletConnect</p>
+                            <p class="text-muted">Real feedback from our trusted community of users</p>
                         </div>
                     </div>
                     <div class="row wow fadeIn">
-                        <!-- BAYC -->
+                        <!-- Testimony 1 -->
                         <div class="d-item col-lg-3 col-md-6">
-                            <div class="nft__item">
-                                <div class="nft__item_wrap">
-                                    <a href="#">
-                                        <img src="{% static 'images/items/bayc-1.png' %}" class="nft__item_preview" alt="Bored Ape #1">
-                                    </a>
-                                </div>
-                                <div class="nft__item_info">
-                                    <a href="#">
-                                        <h4>Bored Ape Yacht Club</h4>
-                                    </a>
-                                    <div class="nft__item_price">12.29 ETH ⚡</div>
-                                    <div class="nft__item_action"><a href="#">Bid Now</a></div>
-                                    <div class="nft__item_like"><i class="fa fa-heart"></i><span>4.5k</span></div>
-                                </div>
+                            <div class="testimonial-item text-center">
+                              
+                                <h5>Jane Doe</h5>
+                                <p class="text-muted">"The asset tracing feature helped me recover lost tokens so easily."</p>
+                                <span class="small text-secondary">🌍 Verified User</span>
                             </div>
                         </div>
 
-                        <!-- CryptoPunks -->
+                        <!-- Testimony 2 -->
                         <div class="d-item col-lg-3 col-md-6">
-                            <div class="nft__item">
-                                <div class="nft__item_wrap">
-                                    <a href="#"><img src="{% static 'images/items/punk-1.jpg' %}" class="nft__item_preview"
-                                            alt="CryptoPunk #1"></a>
-                                </div>
-                                <div class="nft__item_info">
-                                    <a href="#">
-                                        <h4>CryptoPunks Next Gen</h4>
-                                    </a>
-                                    <div class="nft__item_price">~50 ETH</div>
-                                    <div class="nft__item_action"><a href="#">Bid Now</a></div>
-                                    <div class="nft__item_like"><i class="fa fa-heart"></i><span>3.2k</span></div>
-                                </div>
+                            <div class="testimonial-item text-center">
+                           
+                                <h5>Mark Benson</h5>
+                                <p class="text-muted">"DeFi protection ensures my investments are secure. Wsyncs is top-notch."</p>
+                                <span class="small text-secondary">🔒 Long-term User</span>
                             </div>
                         </div>
 
-                        <!-- Moonbirds -->
+                        <!-- Testimony 3 -->
                         <div class="d-item col-lg-3 col-md-6">
-                            <div class="nft__item">
-                                <div class="nft__item_wrap">
-                                    <a href="#"><img src="{% static 'images/items/moonbird-1.jpg' %}" class="nft__item_preview"
-                                            alt="Moonbird #1"></a>
-                                </div>
-                                <div class="nft__item_info">
-                                    <a href="#">
-                                        <h4>Moonbirds</h4>
-                                    </a>
-                                    <div class="nft__item_price">Nest & Stake</div>
-                                    <div class="nft__item_action"><a href="#">Stake Now</a></div>
-                                    <div class="nft__item_like"><i class="fa fa-heart"></i><span>2.8k</span></div>
-                                </div>
+                            <div class="testimonial-item text-center">
+                               
+                                <h5>Aisha Malik</h5>
+                                <p class="text-muted">"End-to-end encryption gives me peace of mind for all my transactions."</p>
+                                <span class="small text-secondary">🤖 Power User</span>
                             </div>
                         </div>
 
-                        <!-- Pudgy Penguins -->
+                        <!-- Testimony 4 -->
                         <div class="d-item col-lg-3 col-md-6">
-                            <div class="nft__item">
-                                <div class="nft__item_wrap">
-                                    <a href="#"><img src="{% static 'images/items/penguin-1.jpg' %}" class="nft__item_preview"
-                                            alt="Pudgy Penguin #1"></a>
-                                </div>
-                                <div class="nft__item_info">
-                                    <a href="#">
-                                        <h4>Pudgy Penguins</h4>
-                                    </a>
-                                    <div class="nft__item_price">0.1 ETH</div>
-                                    <div class="nft__item_action"><a href="#">Buy Now</a></div>
-                                    <div class="nft__item_like"><i class="fa fa-heart"></i><span>3.9k</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Solana Monkey Business -->
-                        <div class="d-item col-lg-3 col-md-6">
-                            <div class="nft__item">
-                                <div class="nft__item_wrap">
-                                    <a href="#"><img src="{% static 'images/items/smb-1.png' %}" class="nft__item_preview"
-                                            alt="SMB #1"></a>
-                                </div>
-                                <div class="nft__item_info">
-                                    <a href="#">
-                                        <h4>Solana Monkey Business</h4>
-                                    </a>
-                                    <div class="nft__item_price">2 SOL</div>
-                                    <div class="nft__item_action"><a href="#">Buy Now</a></div>
-                                    <div class="nft__item_like"><i class="fa fa-heart"></i><span>1.5k</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- NodeMonkes (Bitcoin Ordinals) -->
-                        <div class="d-item col-lg-3 col-md-6">
-                            <div class="nft__item">
-                                <div class="nft__item_wrap">
-                                    <a href="#"><img src="{% static 'images/items/node-1.png' %}" class="nft__item_preview"
-                                            alt="NodeMonke #1"></a>
-                                </div>
-                                <div class="nft__item_info">
-                                    <a href="#">
-                                        <h4>NodeMonkes</h4>
-                                    </a>
-                                    <div class="nft__item_price">₿0.0014</div>
-                                    <div class="nft__item_action"><a href="#">Explore</a></div>
-                                    <div class="nft__item_like"><i class="fa fa-heart"></i><span>900</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- The Captainz -->
-                        <div class="d-item col-lg-3 col-md-6">
-                            <div class="nft__item">
-                                <div class="nft__item_wrap">
-                                    <a href="#"><img src="{% static 'images/items/captain-1.png' %}" class="nft__item_preview"
-                                            alt="Captainz #1"></a>
-                                </div>
-                                <div class="nft__item_info">
-                                    <a href="#">
-                                        <h4>The Captainz</h4>
-                                    </a>
-                                    <div class="nft__item_price">1 ETH</div>
-                                    <div class="nft__item_action"><a href="#">Learn More</a></div>
-                                    <div class="nft__item_like"><i class="fa fa-heart"></i><span>600</span></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Azuki -->
-                        <div class="d-item col-lg-3 col-md-6">
-                            <div class="nft__item">
-                                <div class="nft__item_wrap">
-                                    <a href="#"><img src="{% static 'images/items/azuki-1.png' %}" class="nft__item_preview"
-                                            alt="Azuki #1"></a>
-                                </div>
-                                <div class="nft__item_info">
-                                    <a href="#">
-                                        <h4>Azuki</h4>
-                                    </a>
-                                    <div class="nft__item_price">0.8 ETH</div>
-                                    <div class="nft__item_action"><a href="#">Buy Now</a></div>
-                                    <div class="nft__item_like"><i class="fa fa-heart"></i><span>2.2k</span></div>
-                                </div>
+                            <div class="testimonial-item text-center">
+                              
+                                <h5>Chris Uche</h5>
+                                <p class="text-muted">"From NFTs to secure asset tracing, Wsyncs delivers flawlessly."</p>
+                                <span class="small text-secondary">⭐ Global User</span>
                             </div>
                         </div>
                     </div>
@@ -431,7 +328,7 @@
                             </div>
                         </div>
 
-                        <!-- Fake Platform Age -->
+                        <!-- Years of Trust -->
                         <div class="col-lg-3 col-md-6 wow fadeInRight mb-sm-30" data-wow-delay=".6s">
                             <div class="de_count style-2">
                                 <h3 class="id-color-2">
@@ -519,19 +416,22 @@
                 </div>
             </section>
 
-            <section id="section-popular" class="pb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="text-center">
-                                <h2>Top NFT Sellers</h2>
-                                <div class="small-border bg-color-2"></div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-12 wow fadeIn">
-                            <ol class="author_list">
-                                <li>
+             <!-- Top NFT Sellers Section -->
+        <section id="section-popular" class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h2>Top NFT Sellers</h2>
+                            <div class="small-border bg-color-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 wow fadeIn">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
                                     <div class="author_list_pp">
                                         <a href="#">
                                             <img class="lazy pp-author" src="{% static 'images/author/author-1.jpg' %}" alt="">
@@ -542,9 +442,11 @@
                                         <a href="#">CryptoMonk.eth</a>
                                         <span>14.2 ETH</span>
                                     </div>
-                                </li>
+                                </div>
+                            </div>
 
-                                <li>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
                                     <div class="author_list_pp">
                                         <a href="#">
                                             <img class="lazy pp-author" src="{% static 'images/author/author-2.jpg' %}" alt="">
@@ -555,9 +457,11 @@
                                         <a href="#">MetaQueen</a>
                                         <span>11.8 ETH</span>
                                     </div>
-                                </li>
+                                </div>
+                            </div>
 
-                                <li>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
                                     <div class="author_list_pp">
                                         <a href="#">
                                             <img class="lazy pp-author" src="{% static 'images/author/author-3.jpg' %}" alt="">
@@ -568,9 +472,11 @@
                                         <a href="#">ZionWraith</a>
                                         <span>10.5 ETH</span>
                                     </div>
-                                </li>
+                                </div>
+                            </div>
 
-                                <li>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
                                     <div class="author_list_pp">
                                         <a href="#">
                                             <img class="lazy pp-author" src="{% static 'images/author/author-4.jpg' %}" alt="">
@@ -578,12 +484,14 @@
                                         </a>
                                     </div>
                                     <div class="author_list_info">
-                                        <a href="#">BitBaddie</a>
+                                        <a href="#">Bit(Client)Baddie</a>
                                         <span>9.6 ETH</span>
                                     </div>
-                                </li>
+                                </div>
+                            </div>
 
-                                <li>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
                                     <div class="author_list_pp">
                                         <a href="#">
                                             <img class="lazy pp-author" src="{% static 'images/author/author-5.jpg' %}" alt="">
@@ -594,9 +502,11 @@
                                         <a href="#">OrbitalLion</a>
                                         <span>8.4 ETH</span>
                                     </div>
-                                </li>
+                                </div>
+                            </div>
 
-                                <li>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
                                     <div class="author_list_pp">
                                         <a href="#">
                                             <img class="lazy pp-author" src="{% static 'images/author/author-6.jpg' %}" alt="">
@@ -607,9 +517,11 @@
                                         <a href="#">GigaWhale</a>
                                         <span>7.9 ETH</span>
                                     </div>
-                                </li>
+                                </div>
+                            </div>
 
-                                <li>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
                                     <div class="author_list_pp">
                                         <a href="#">
                                             <img class="lazy pp-author" src="{% static 'images/author/author-7.jpg' %}" alt="">
@@ -620,9 +532,11 @@
                                         <a href="#">ChainMuse</a>
                                         <span>6.6 ETH</span>
                                     </div>
-                                </li>
+                                </div>
+                            </div>
 
-                                <li>
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
                                     <div class="author_list_pp">
                                         <a href="#">
                                             <img class="lazy pp-author" src="{% static 'images/author/author-10.jpg' %}" alt="">
@@ -633,12 +547,13 @@
                                         <a href="#">Darkmint</a>
                                         <span>5.1 ETH</span>
                                     </div>
-                                </li>
-                            </ol>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             <section id="section-category" class="no-top no-bottom">
                 <div class="container">
@@ -693,7 +608,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <h2>Latest NFT News</h2>
+                            <h2>Latest Web3 News</h2>
                             <div class="small-border bg-color-2"></div>
                         </div>
                     </div>
@@ -716,8 +631,8 @@
                             <p>Click the "Connect Wallet" button in the header, choose your wallet, and follow the prompts to authorize access.</p>
                         </div>
                         <div class="col-md-6 mb20">
-                            <h5>What types of NFTs can I explore here?</h5>
-                            <p>We feature trending art, music, collectibles, metaverse assets, and 1/1 unique NFTs from verified creators.</p>
+                            <h5>How does asset tracing work?</h5>
+                            <p>Our AI-powered tools scan blockchain networks to track and recover your digital assets securely.</p>
                         </div>
                     </div>
                 </div>
@@ -737,8 +652,8 @@
                             <h5>Explore</h5>
                             <ul>
                                 <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'home' %}#services">Services</a></li>
                                 <li><a href="{% url 'home' %}#about">About</a></li>
-                                <li><a href="{% url 'home' %}">Marketplace</a></li>
                                 <li><a href="{% url 'connect' %}">Connect Wallet</a></li>
                             </ul>
                         </div>
@@ -758,7 +673,7 @@
                     <div class="col-md-6 col-sm-12 col-xs-1">
                         <div class="widget">
                             <h5>Newsletter</h5>
-                            <p>Stay updated on NFT security alerts and Web3 updates — straight to your inbox.</p>
+                            <p>Stay updated on Web3 security, asset tracing, DeFi, and NFT updates — straight to your inbox.</p>
                             <form action="blank.php" class="row form-dark" id="form_subscribe" method="post"
                                 name="form_subscribe">
                                 <div class="col text-center">
@@ -814,8 +729,8 @@
             mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
         });
 
-        async function loadNFTNews() {
-            const rssUrl = 'https://cointelegraph.com/rss/tag/nft';
+        async function loadWeb3News() {
+            const rssUrl = 'https://cointelegraph.com/rss/tag/blockchain';
             const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
 
             try {
@@ -829,21 +744,15 @@
                 for (const item of data.items) {
                     if (articlesShown >= maxArticles) break;
 
-                    // Try thumbnail first
                     let imageUrl = item.thumbnail && item.thumbnail !== '' ? item.thumbnail : null;
-
-                    // If no thumbnail, try to extract <img> from description
                     if (!imageUrl) {
                         const match = item.description.match(/<img.*?src="(.*?)"/);
                         if (match && match[1]) {
                             imageUrl = match[1];
                         }
                     }
-
-                    // Skip if there's no valid image
                     if (!imageUrl) continue;
 
-                    // Build the card
                     const card = `
                         <div class="col-lg-4 col-md-6 mb-sm-30">
                             <div class="bloglist item">
@@ -852,7 +761,7 @@
                                         <img src="${imageUrl}" alt="${item.title}" class="lazy">
                                     </div>
                                     <div class="post-text">
-                                        <span class="p-tagline">${item.categories[0] || 'NFT News'}</span>
+                                        <span class="p-tagline">${item.categories[0] || 'Web3 News'}</span>
                                         <span class="p-date">${new Date(item.pubDate).toDateString()}</span>
                                         <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
                                         <p>${item.description.replace(/<[^>]+>/g, '').slice(0, 100)}...</p>
@@ -867,16 +776,15 @@
                     articlesShown++;
                 }
 
-                // If no articles shown
                 if (articlesShown === 0) {
-                    newsContainer.innerHTML = '<p>No NFT news available with images at the moment.</p>';
+                    newsContainer.innerHTML = '<p>No Web3 news available with images at the moment.</p>';
                 }
             } catch (error) {
-                console.error("Failed to load NFT news:", error);
+                console.error("Failed to load Web3 news:", error);
             }
         }
 
-        loadNFTNews();
+        loadWeb3News();
     </script>
 </body>
 </html>

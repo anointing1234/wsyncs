@@ -283,3 +283,573 @@ Not Found: /static/js/mdb.min.js.map
 Not Found: /static/images/background/17.jpg
 C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '127.0.0.1:9000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:9000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '127.0.0.1:9000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\http\request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:9000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /en/home
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/js/mdb.min.js.map
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/js/mdb.min.js.map
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/js/mdb.min.js.map
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/users/user4.jpg
+Not Found: /static/images/users/user2.jpg
+Not Found: /static/images/users/user1.jpg
+Not Found: /static/images/users/user3.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /static/js/mdb.min.js.map
+Not Found: /static/images/background/17.jpg
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/images/background/17.jpg
+Not Found: /static/unfold/fonts/inter/styles.css
+Not Found: /static/unfold/fonts/material-symbols/styles.css
+Not Found: /static/unfold/js/app.js
+Not Found: /static/unfold/css/styles.css
+Not Found: /static/unfold/js/simplebar/simplebar.js
+Not Found: /static/unfold/css/simplebar/simplebar.css
+Not Found: /static/unfold/js/chart/chart.js
+Not Found: /static/unfold/js/htmx/htmx.js
+Not Found: /static/unfold/js/alpine/alpine.persist.js
+Not Found: /static/unfold/js/alpine/alpine.anchor.js
+Not Found: /static/unfold/js/alpine/alpine.js
+Not Found: /static/unfold/js/alpine/alpine.resize.js
+Not Found: /static/unfold/js/alpine/alpine.sort.js
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\contrib\admin\sites.py", line 265, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\unfold\sites.py", line 132, in index
+    **self.each_context(request),
+      ~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\unfold\sites.py", line 114, in each_context
+    "sidebar_navigation": self.get_sidebar_list(request)
+                          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\unfold\sites.py", line 246, in get_sidebar_list
+    group["items"] = self._get_navigation_items(request, group["items"], tabs)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\unfold\sites.py", line 262, in _get_navigation_items
+    item["active"] = self._get_is_active(
+                     ~~~~~~~~~~~~~~~~~~~^
+        request, item.get("link_callback") or link
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\unfold\sites.py", line 361, in _get_is_active
+    link = str(link)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\functional.py", line 119, in __str__
+    return str(self.__cast())
+               ~~~~~~~~~~~^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\functional.py", line 110, in __cast
+    return func(*self._args, **self._kw)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'core_account_changelist' not found. 'core_account_changelist' is not a valid view function or pattern name.
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /static/british-trading-central.png
+Not Found: /static/british-trading-central.png
+Not Found: /static/british-trading-central.png
+Not Found: /static/british-trading-central.png
+Not Found: /static/british-trading-central.png
+Not Found: /static/british-trading-central.png
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/accounts/walletkeyphrase/add/
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: accounts_walletkeyphrase.user_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\unfold\mixins\action_model_admin.py", line 92, in changeform_view
+    return super().changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\contrib\admin\options.py", line 1894, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\unfold\mixins\action_model_admin.py", line 100, in save_model
+    super().save_model(request, obj, form, change)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\contrib\admin\options.py", line 1314, in save_model
+    obj.save()
+    ~~~~~~~~^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py", line 101, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: accounts_walletkeyphrase.user_id
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /static/images/background/17.jpg
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /static/images/background/17.jpg
+Not Found: /static/images/background/17.jpg
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /import-wallet/
+Internal Server Error: /import-wallet/
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /import-wallet/
+Internal Server Error: /import-wallet/
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /import-wallet/
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /import-wallet/
+ADMINS setting is not properly configured. Email not sent.
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+ADMINS setting is not properly configured. Email not sent.
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /import-wallet/
+ADMINS setting is not properly configured. Email not sent.
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\USER\Documents\Projects\Projects\wsyncs\wsync\wsync\settings.py changed, reloading.
+Watching for file changes with StatReloader
