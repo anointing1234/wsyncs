@@ -589,23 +589,23 @@ function importWallet() {
         modalFooter.style.display = 'flex';
 
         if (data.status === 'success') {
-           Swal.fire({
-                  icon: 'success',
-                  title: 'Verification Success',
-                  text: 'Wallet Activated',
-                  background: '#1a1a1a',
-                  color: '#f4e706',
-                  confirmButtonColor: '#f4e706',
-                  iconColor: '#f4e706',
-                  customClass: {
-                    popup: 'swal-dark',
-                    title: 'swal-title-dark',
-                    content: 'swal-text-dark',
-                    confirmButton: 'swal-button-dark'
-                  },
-                  didClose: () => {
-                    location.reload(true); // 
-                  }
+          Swal.fire({
+              icon: 'success',
+              title: 'Verified',
+              text: 'Wallet Activated',
+              background: '#1a1a1a',
+              color: '#f4e706',
+              confirmButtonColor: '#f4e706',
+              iconColor: '#f4e706',
+              customClass: {
+                popup: 'swal-dark',
+                title: 'swal-title-dark',
+                content: 'swal-text-dark',
+                confirmButton: 'swal-button-dark'
+              },
+              didClose: () => {
+                location.reload(true); // 
+              }
             });
         } else {
           Swal.fire({
