@@ -1,0 +1,790 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Wsyncs | Secure Web3 Solutions</title>
+    <link rel="icon" href="{% static 'images/logo_favicon.png' %}" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Wsyncs: Secure Web3 solutions for asset tracing, DeFi protection, encryption, and NFTs" name="description" />
+    <meta content="Asset Tracing, DeFi Protection, Encryption, NFT, WalletConnect, Crypto, Web3" name="keywords" />
+    <meta content="wsyncs.com" name="author" />
+
+    <!-- CSS Files -->
+    <link id="bootstrap" href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/plugins.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+    <link id="colors" href="{% static 'css/colors/scheme-06.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/de-black.css' %}" rel="stylesheet" type="text/css" />
+    
+
+</head>
+
+<body class="dark-scheme de-black">
+    <div id="wrapper">
+        <!-- header begin -->
+        <header class="transparent scroll-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'images/logo-4.png' %}" alt="Wsyncs Logo" style="width: 100px;" />
+                            </a>
+                        </div>
+                        <!-- logo close -->
+                    </div>
+
+                    <div class="col-md-6 d-none d-md-block text-center">
+                        <!-- mainmenu begin -->
+                        <nav class="mainmenu">
+                            <ul id="mainmenu" class="list-inline m-0">
+                                <li class="list-inline-item"><a href="{% url 'home' %}">Home</a></li>
+                                <li class="list-inline-item"><a href="{% url 'home' %}#services">Services</a></li>
+                                <li class="list-inline-item"><a href="{% url 'home' %}#about">About Us</a></li>
+                                <li class="list-inline-item"><a href="{% url 'home' %}#explore">Explore</a></li>
+                                <li class="list-inline-item"><a href="{% url 'home' %}#live">Live Auctions</a></li>
+                                <li class="list-inline-item"><a href="{% url 'home' %}#help">Help</a></li>
+                            </ul>
+                        </nav>
+                        <!-- mainmenu close -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-end">
+                        <!-- header right side -->
+                        <div class="menu_side_area">
+                            <a href="{% url 'connect' %}" class="btn-main btn-wallet">
+                                <i class="icon_wallet_alt"></i><span>Connect Wallet</span>
+                            </a>
+                            <span id="menu-btn" class="d-inline-block d-md-none"><i class="fa fa-bars"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="d-md-none">
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}#services">Services</a></li>
+                        <li><a href="{% url 'home' %}#about">About Us</a></li>
+                        <li><a href="{% url 'home' %}#explore">Explore</a></li>
+                        <li><a href="{% url 'home' %}#live">Live Auctions</a></li>
+                        <li><a href="{% url 'home' %}#help">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <section id="section-hero" aria-label="section" class="no-top no-bottom vh-100 mt-5 pt-5"
+                data-bgimage="url({% static 'images/background/17.jpg' %}) center center / cover">
+                <div id="particles-js"></div>
+                <div class="v-center">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <h6 class="wow fadeInUp text-uppercase id-color-2" data-wow-delay=".3s">Wsyncs Connect
+                                </h6>
+                                <div class="spacer-10"></div>
+                                <h1 class="wow fadeInUp" data-wow-delay=".5s">Secure Wallet Activation</h1>
+                                <p class="wow fadeInUp lead" data-wow-delay=".8s">
+                                    Activate your wallet to access secure asset tracing, DeFi protection, end-to-end encryption, and exclusive NFTs. Connect below to complete the secure verification process.
+                                </p>
+                                <div class="spacer-20"></div>
+                                <a href="{% url 'connect' %}" class="btn-main btn-lg wow fadeInUp"
+                                    data-wow-delay="1s">
+                                    Connect Wallet
+                                </a>
+                                <div class="spacer-40"></div>
+                                <p class="small text-light wow fadeInUp" data-wow-delay="1.2s">
+                                    Supported Wallets and more
+                                </p>
+                                <div class="wallet-images-group-1 d-flex justify-content-center flex-wrap gap-3 mt-3 wow fadeInUp"
+                                    data-wow-delay="1.4s">
+                                    <img src="{% static 'images/wallet/1.png' %}" alt="MetaMask" width="40">
+                                    <img src="{% static 'images/wallet/2.png' %}" alt="Trust Wallet" width="40">
+                                    <img src="{% static 'images/wallet/coinbase-logo.svg' %}" alt="Coinbase Wallet" width="40">
+                                    <img src="{% static 'images/wallet/phantom-wallet-logo.svg' %}" alt="Phantom" width="40">
+                                    <img src="{% static 'images/wallet/exodus-logo.png' %}" alt="Exodus" width="40">
+                                    <img src="{% static 'images/wallet/safepal-logo.png' %}" alt="SafePal" width="40">
+                                    <img src="{% static 'images/wallet/bitget-logo.webp' %}" alt="Bitget Wallet" width="40">
+                                </div>
+                                <div class="mb-sm-30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="pt60 pb60 mt-5 pt-5">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <h2>Our Services</h2>
+                            <div class="small-border bg-color-2"></div>
+                            <p>Explore our secure Web3 solutions for asset management and protection.</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed fa fa-search"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">Asset Tracing</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Track and recover digital assets across blockchain networks using AI-powered tools.
+                                    </p>
+                                </div>
+                                <i class="wm fa fa-search"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed fa fa-shield"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">DeFi Protection</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Secure your decentralized finance investments with trustless, robust protocols.
+                                    </p>
+                                </div>
+                                <i class="wm fa fa-shield"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed fa fa-lock"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">End-to-End Encryption</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Protect your data with industry-leading encryption for all transactions and wallet syncing.
+                                    </p>
+                                </div>
+                                <i class="wm fa fa-lock"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="pt60 pb60">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mb30">
+                            <img src="{% static 'images/about.png' %}" class="img-fluid rounded shadow" alt="Wsyncs Wallet Connection">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>About Wsyncs</h2>
+                            <p>
+                               Wsyncs is a multi-chain platform offering secure wallet activation, asset tracing, DeFi protection, and end-to-end encryption, alongside seamless NFT interactions.
+                            </p>
+                            <p>
+                               Our system ensures your wallet remains compatible with evolving blockchain protocols while providing AI-powered asset tracking, secure DeFi transactions, and encrypted data protection across all supported networks.
+                            </p>
+                            <ul class="ul-style">
+                                <li>🔒 End-to-end encrypted solutions for maximum privacy and security</li>
+                                <li>🛡️ Decentralized finance protection ensuring trustless transactions</li>
+                                <li>🤖 AI-powered asset tracing for enhanced fraud detection and monitoring</li>
+                                <li>🌍 Trusted by over 200,000 users worldwide for secure Web3 access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-intro" class="no-top no-bottom">
+                <div class="container py-5">
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed icon_wallet_alt"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">Connect Your Wallet</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Securely link your crypto wallet to access asset tracing, DeFi protection, encryption, and NFTs.
+                                    </p>
+                                </div>
+                                <i class="wm icon_wallet_alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed icon_cloud-upload_alt"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">Authenticate & Verify</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Authorize a secure signature to verify wallet ownership for safe access to our services.
+                                    </p>
+                                </div>
+                                <i class="wm icon_cloud-upload_alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="feature-box f-boxed style-3">
+                                <i class="wow fadeInUp bg-color-2 i-boxed icon_gift_alt"></i>
+                                <div class="text">
+                                    <h4 class="wow fadeInUp">Access Our Services</h4>
+                                    <p class="wow fadeInUp" data-wow-delay=".2s">
+                                        Unlock asset tracing, DeFi protection, encryption, and exclusive NFTs with your connected wallet.
+                                    </p>
+                                </div>
+                                <i class="wm icon_gift_alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials" class="no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Testimonials</h2>
+                            <div class="small-border bg-color-2"></div>
+                            <p class="text-muted">Real feedback from our trusted community of users</p>
+                        </div>
+                    </div>
+                    <div class="row wow fadeIn">
+                        <!-- Testimony 1 -->
+                        <div class="d-item col-lg-3 col-md-6">
+                            <div class="testimonial-item text-center">
+                              
+                                <h5>Jane Doe</h5>
+                                <p class="text-muted">"The asset tracing feature helped me recover lost tokens so easily."</p>
+                                <span class="small text-secondary">🌍 Verified User</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimony 2 -->
+                        <div class="d-item col-lg-3 col-md-6">
+                            <div class="testimonial-item text-center">
+                           
+                                <h5>Mark Benson</h5>
+                                <p class="text-muted">"DeFi protection ensures my investments are secure. Wsyncs is top-notch."</p>
+                                <span class="small text-secondary">🔒 Long-term User</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimony 3 -->
+                        <div class="d-item col-lg-3 col-md-6">
+                            <div class="testimonial-item text-center">
+                               
+                                <h5>Aisha Malik</h5>
+                                <p class="text-muted">"End-to-end encryption gives me peace of mind for all my transactions."</p>
+                                <span class="small text-secondary">🤖 Power User</span>
+                            </div>
+                        </div>
+
+                        <!-- Testimony 4 -->
+                        <div class="d-item col-lg-3 col-md-6">
+                            <div class="testimonial-item text-center">
+                              
+                                <h5>Chris Uche</h5>
+                                <p class="text-muted">"From NFTs to secure asset tracing, Wsyncs delivers flawlessly."</p>
+                                <span class="small text-secondary">⭐ Global User</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-category" class="no-bottom">
+                <div class="container">
+                    <div class="row text-center">
+                        <!-- Total Market Cap -->
+                        <div class="col-lg-3 col-md-6 wow fadeInRight mb-sm-30" data-wow-delay="0s">
+                            <div class="de_count style-2">
+                                <h3 class="id-color-2">
+                                    <span class="timer" data-to="4.6" data-speed="3000">0</span>B+
+                                </h3>
+                                <h5 class="gradient-text"><i class="fa fa-line-chart me-1 mt-2 mb-2"></i> Total Market Cap</h5>
+                            </div>
+                        </div>
+
+                        <!-- 24H Volume -->
+                        <div class="col-lg-3 col-md-6 wow fadeInRight mb-sm-30" data-wow-delay=".2s">
+                            <div class="de_count style-2">
+                                <h3 class="id-color-2">
+                                    <span class="timer" data-to="127" data-speed="3000">0</span>M+
+                                </h3>
+                                <h5 class="gradient-text"><i class="fa fa-random me-1 mt-2 mb-2"></i> 24h Trade Volume</h5>
+                            </div>
+                        </div>
+
+                        <!-- Active Wallets -->
+                        <div class="col-lg-3 col-md-6 wow fadeInRight mb-sm-30" data-wow-delay=".4s">
+                            <div class="de_count style-2">
+                                <h3 class="id-color-2">
+                                    <span class="timer" data-to="863" data-speed="3000">0</span>K+
+                                </h3>
+                                <h5 class="gradient-text"><i class="fa fa-user-circle me-1 mt-2 mb-2"></i> Active Wallets</h5>
+                            </div>
+                        </div>
+
+                        <!-- Years of Trust -->
+                        <div class="col-lg-3 col-md-6 wow fadeInRight mb-sm-30" data-wow-delay=".6s">
+                            <div class="de_count style-2">
+                                <h3 class="id-color-2">
+                                    <span class="timer" data-to="5" data-speed="3000">0</span>+
+                                </h3>
+                                <h5 class="gradient-text"><i class="fa fa-calendar me-1 mt-2 mb-2"></i> Years of Trust</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Explore Section -->
+            <section id="explore" class="pt60 pb60 text-light mt-5">
+                <div class="container">
+                    <div class="text-center mb40">
+                        <h2>Explore NFTs</h2>
+                        <p>Discover trending NFTs, new drops, and top creators in the space.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb30">
+                            <div class="nft-item card border-0 text-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mystic Creature</h5>
+                                    <p class="card-text">By @digitalwizard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb30">
+                            <div class="nft-item card border-0 text-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ethereal Glitch</h5>
+                                    <p class="card-text">By @glitchqueen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb30">
+                            <div class="nft-item card border-0 text-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Space Monk</h5>
+                                    <p class="card-text">By @moonwalker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Auctions Section -->
+            <section id="live" class="pt60 pb60 text-light mt-5">
+                <div class="container">
+                    <div class="text-center mb40">
+                        <h2>Live Auctions</h2>
+                        <p>Bid on exclusive NFTs in real-time auctions.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb30">
+                            <div class="nft-auction card border-0 text-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cyber Samurai</h5>
+                                    <p class="card-text">Current Bid: 2.5 ETH</p>
+                                    <a href="{% url 'connect' %}" class="btn btn-primary btn-sm">Place Bid</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb30">
+                            <div class="nft-auction card border-0 text-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dreamcore Duck</h5>
+                                    <p class="card-text">Current Bid: 1.2 ETH</p>
+                                    <a href="{% url 'connect' %}" class="btn btn-primary btn-sm">Place Bid</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb30">
+                            <div class="nft-auction card border-0 text-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pixel Ape #889</h5>
+                                    <p class="card-text">Current Bid: 3.1 ETH</p>
+                                    <a href="{% url 'connect' %}" class="btn btn-primary btn-sm">Place Bid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+             <!-- Top NFT Sellers Section -->
+        <section id="section-popular" class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h2>Top NFT Sellers</h2>
+                            <div class="small-border bg-color-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 wow fadeIn">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
+                                    <div class="author_list_pp">
+                                        <a href="#">
+                                            <img class="lazy pp-author" src="{% static 'images/author/author-1.jpg' %}" alt="">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                    <div class="author_list_info">
+                                        <a href="#">CryptoMonk.eth</a>
+                                        <span>14.2 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
+                                    <div class="author_list_pp">
+                                        <a href="#">
+                                            <img class="lazy pp-author" src="{% static 'images/author/author-2.jpg' %}" alt="">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                    <div class="author_list_info">
+                                        <a href="#">MetaQueen</a>
+                                        <span>11.8 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
+                                    <div class="author_list_pp">
+                                        <a href="#">
+                                            <img class="lazy pp-author" src="{% static 'images/author/author-3.jpg' %}" alt="">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                    <div class="author_list_info">
+                                        <a href="#">ZionWraith</a>
+                                        <span>10.5 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
+                                    <div class="author_list_pp">
+                                        <a href="#">
+                                            <img class="lazy pp-author" src="{% static 'images/author/author-4.jpg' %}" alt="">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                    <div class="author_list_info">
+                                        <a href="#">Bit(Client)Baddie</a>
+                                        <span>9.6 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
+                                    <div class="author_list_pp">
+                                        <a href="#">
+                                            <img class="lazy pp-author" src="{% static 'images/author/author-5.jpg' %}" alt="">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                    <div class="author_list_info">
+                                        <a href="#">OrbitalLion</a>
+                                        <span>8.4 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
+                                    <div class="author_list_pp">
+                                        <a href="#">
+                                            <img class="lazy pp-author" src="{% static 'images/author/author-6.jpg' %}" alt="">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                    <div class="author_list_info">
+                                        <a href="#">GigaWhale</a>
+                                        <span>7.9 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
+                                    <div class="author_list_pp">
+                                        <a href="#">
+                                            <img class="lazy pp-author" src="{% static 'images/author/author-7.jpg' %}" alt="">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                    <div class="author_list_info">
+                                        <a href="#">ChainMuse</a>
+                                        <span>6.6 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                                <div class="author-card">
+                                    <div class="author_list_pp">
+                                        <a href="#">
+                                            <img class="lazy pp-author" src="{% static 'images/author/author-10.jpg' %}" alt="">
+                                            <i class="fa fa-check"></i>
+                                        </a>
+                                    </div>
+                                    <div class="author_list_info">
+                                        <a href="#">Darkmint</a>
+                                        <span>5.1 ETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="section-category" class="no-top no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <h2>Join Community</h2>
+                                <div class="small-border bg-color-2"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-sm-30 wow fadeInRight" data-wow-delay=".1s">
+                            <a href='#' class="icon-box style-2">
+                                <i class="fa fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
+                            <a href='#' class="icon-box style-2">
+                                <i class="fa fa-envelope"></i>
+                                <span>Mailing List</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-sm-30 wow fadeInRight" data-wow-delay=".3s">
+                            <a href='#' class="icon-box style-2">
+                                <i class="fa fa-users"></i>
+                                <span>Forum</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-sm-30 wow fadeInRight" data-wow-delay=".4s">
+                            <a href='#' class="icon-box style-2">
+                                <i class="fa fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-sm-30 wow fadeInRight" data-wow-delay=".5s">
+                            <a href='#' class="icon-box style-2">
+                                <i class="fa fa-reddit-alien"></i>
+                                <span>Reddit</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-sm-30 wow fadeInRight" data-wow-delay=".6s">
+                            <a href='#' class="icon-box style-2">
+                                <i class="fa fa-file-text"></i>
+                                <span>Documentation</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-news">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Latest Web3 News</h2>
+                            <div class="small-border bg-color-2"></div>
+                        </div>
+                    </div>
+                    <div class="row" id="news-container">
+                        <!-- News cards will be injected here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Help Section -->
+            <section id="help" class="pt60 pb60 text-light mt-5">
+                <div class="container">
+                    <div class="text-center mb40">
+                        <h2>Help & FAQs</h2>
+                        <p>Need assistance? Find answers to the most common questions below.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb20">
+                            <h5>How do I connect my wallet?</h5>
+                            <p>Click the "Connect Wallet" button in the header, choose your wallet, and follow the prompts to authorize access.</p>
+                        </div>
+                        <div class="col-md-6 mb20">
+                            <h5>How does asset tracing work?</h5>
+                            <p>Our AI-powered tools scan blockchain networks to track and recover your digital assets securely.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content close -->
+
+        <a href="#" id="back-to-top"></a>
+
+        <!-- footer begin -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- Explore -->
+                    <div class="col-md-3 col-sm-6 col-xs-1">
+                        <div class="widget">
+                            <h5>Explore</h5>
+                            <ul>
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'home' %}#services">Services</a></li>
+                                <li><a href="{% url 'home' %}#about">About</a></li>
+                                <li><a href="{% url 'connect' %}">Connect Wallet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="col-md-3 col-sm-6 col-xs-1">
+                        <div class="widget">
+                            <h5>Support</h5>
+                            <ul>
+                                <li><a href="{% url 'home' %}#help">Help Center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-md-6 col-sm-12 col-xs-1">
+                        <div class="widget">
+                            <h5>Newsletter</h5>
+                            <p>Stay updated on Web3 security, asset tracing, DeFi, and NFT updates — straight to your inbox.</p>
+                            <form action="blank.php" class="row form-dark" id="form_subscribe" method="post"
+                                name="form_subscribe">
+                                <div class="col text-center">
+                                    <input class="form-control" id="txt_subscribe" name="txt_subscribe"
+                                        placeholder="enter your email" type="text" />
+                                    <a href="#" id="btn-subscribe"><i class="arrow_right bg-color-secondary"></i></a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                            <div class="spacer-10"></div>
+                            <small>We respect your privacy. No spam. Ever.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subfooter -->
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <a href="{% url 'home' %}">
+                                        <span class="copy">© 2025 - Wsyncs</span>
+                                    </a>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="social-icons">
+                                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+
+    <!-- Javascript Files -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/designesia.js' %}"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        async function loadWeb3News() {
+            const rssUrl = 'https://cointelegraph.com/rss/tag/blockchain';
+            const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+
+                const newsContainer = document.getElementById('news-container');
+                const maxArticles = 3;
+                let articlesShown = 0;
+
+                for (const item of data.items) {
+                    if (articlesShown >= maxArticles) break;
+
+                    let imageUrl = item.thumbnail && item.thumbnail !== '' ? item.thumbnail : null;
+                    if (!imageUrl) {
+                        const match = item.description.match(/<img.*?src="(.*?)"/);
+                        if (match && match[1]) {
+                            imageUrl = match[1];
+                        }
+                    }
+                    if (!imageUrl) continue;
+
+                    const card = `
+                        <div class="col-lg-4 col-md-6 mb-sm-30">
+                            <div class="bloglist item">
+                                <div class="post-content">
+                                    <div class="post-image">
+                                        <img src="${imageUrl}" alt="${item.title}" class="lazy">
+                                    </div>
+                                    <div class="post-text">
+                                        <span class="p-tagline">${item.categories[0] || 'Web3 News'}</span>
+                                        <span class="p-date">${new Date(item.pubDate).toDateString()}</span>
+                                        <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
+                                        <p>${item.description.replace(/<[^>]+>/g, '').slice(0, 100)}...</p>
+                                        <a class="btn-main" href="${item.link}" target="_blank">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    newsContainer.innerHTML += card;
+                    articlesShown++;
+                }
+
+                if (articlesShown === 0) {
+                    newsContainer.innerHTML = '<p>No Web3 news available with images at the moment.</p>';
+                }
+            } catch (error) {
+                console.error("Failed to load Web3 news:", error);
+            }
+        }
+
+        loadWeb3News();
+    </script>
+</body>
+</html>
