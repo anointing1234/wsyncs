@@ -38,8 +38,8 @@ SECRET_KEY = 'django-insecure-bz%pps1n3#6c48lvqia(d)@el9ee!(*7#1wketi-2%w#-)qzdu
 DEBUG = False
 
 # ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = ["wsyncs.com"]
-CSRF_TRUSTED_ORIGINS = ["https://wsyncs.com"]
+#ALLOWED_HOSTS = ["wsyncs.com"]
+#CSRF_TRUSTED_ORIGINS = ["https://wsyncs.com"]
 
 
 
